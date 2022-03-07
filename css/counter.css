@@ -1,0 +1,129 @@
+* {
+	padding: 0;
+	margin: 0;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+  }
+  
+  :root {
+	--bottom-0: 470%;
+	--bottom-1: 470%;
+	--bottom-2: 470%;
+	--bottom-3: 470%;
+	--bottom-4: 470%;
+  }
+
+  .counters{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+  
+  
+  .b {
+	background-color: #fff;
+    width: 21vw;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-left: 16%; */
+  }
+  
+  .numbers-wrapper {
+	height: 100px;
+	width: auto;
+	overflow-y: hidden;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color:  #d6dae0;
+	box-shadow: inset 5px 5px 10px #07090c, inset -5px -5px 10px #131922;
+  }
+  .numbers-wrapper .nums {
+	transition: bottom 0.7s;
+	opacity: 0.92;
+	color: #1d1919;;
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	font-size: 2rem;
+	line-height: 95px;
+	position: relative;
+	margin: 12px;
+	font-family: "Poppins", sans-serif;
+  }
+  .numbers-wrapper .nums span {
+	margin: 5px;
+	user-select: none;
+  }
+  
+  .nums:nth-child(1) {
+	bottom: var(--bottom-0);
+  }
+  
+  .nums:nth-child(2) {
+	bottom: var(--bottom-1);
+  }
+  
+  .nums:nth-child(3) {
+	bottom: var(--bottom-2);
+  }
+  
+  .nums:nth-child(4) {
+	bottom: var(--bottom-3);
+  }
+  
+  .nums:nth-child(5) {
+	bottom: var(--bottom-4);
+  }
+  
+  .input-wrapper {
+	margin-top: 50px;
+	display: flex;
+  }
+  .input-wrapper #input-number {
+	color: #fff;
+	padding: 0px 10px;
+	box-sizing: border-box;
+	outline: none;
+	font-size: 1.2rem;
+	width: 200px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+	background-color: #0d1117;
+	box-shadow: inset 5px 5px 10px #07090c, inset -5px -5px 10px #131922;
+	transition: transform 0.2s;
+  }
+  .input-wrapper #input-number:focus {
+	transform: translate(-10px);
+  }
+  .input-wrapper #input-btn {
+	padding: 0 10px;
+	margin-left: 7px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	background-color: #198754;
+	box-shadow: inset 5px 5px 10px #105636, inset -5px -5px 10px #22b872;
+	color: rgba(255, 255, 255, 0.9);
+	font-weight: bold;
+	font-size: 1rem;
+	cursor: pointer;
+	font-family: "Poppins", sans-serif;
+	opacity: 0.9;
+  }
+  .input-wrapper #input-btn:active {
+	transform: scale(0.95);
+  }

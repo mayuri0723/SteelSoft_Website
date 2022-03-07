@@ -1,0 +1,29 @@
+.componenet{
+	position: relative;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* .b1{
+   position: absolute;
+   transform: translate(-50%, -50%);
+} */
+
+.tooltips {
+   /* position: relative; */
+   text-decoration: none;
+   color: blue;
+   position: absolute;
+   display: none;
+}
+
+.btn-sp{
+   position: absolute;
+   /* top: 27%; */
+   width: 3vw;
+   height: 3vw;
+   /* right: 30%; */
+}
+.btn-sp:hover ~ .tooltips{
+   display: block;
+}

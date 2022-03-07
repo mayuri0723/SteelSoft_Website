@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', 'PT Sans Narrow';
+    /* font-family: cambria; */
+  }
+  
+  .b{
+    margin-left:40px;
+  } 
+  
+  .header {
+    padding: 1em;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+  }
+  
+  
+  /* Flexcontainer */
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  
+  }
+  
+  .box {
+    background-color: #FFFAF0;
+    /* box height & width */
+    height: 200px;
+    width: 20%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .box > div {
+    /* puts colour name in the middle of box */
+    margin-top: 25%;
+    /* font-size elements*/
+    font-size: 30px;
+    color: white;
+  }
+  
+  /* make flexbox responsive */
+  @media screen and (max-width: 800px) {
+    .flex-container {
+      flex-wrap: wrap;
+    }
+    .box {
+      width: 50%;
+    }
+  }
+
+  .box:hover {
+    transform: scale(0.9,0.9);
+  }
+  
+/* .col-md-3{
+  width: 210px;
+}  */
+  
+  
+  

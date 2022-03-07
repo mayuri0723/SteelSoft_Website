@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+@media (min-width: 576px) { 
+  .ftco-footer-widget mb-4{
+    margin:0px;
+  }
+
+}
+
+  
+  
+
+@media (min-width: 768px) { }
+
+
+@media (min-width: 992px) {  }
+
+@media (min-width: 1200px) { 
+  .hero-wrap .overlay{position: absolute;
+    top: 0;
+    left: -1px;
+    right: -444px;
+    bottom: 0;
+    content: '';
+    opacity: .5;
+    background: #000;
+
+  }
+  .com-bg {
+    width: 156%;
+  }
+ }
+
+@media (min-width: 1400px) { }
