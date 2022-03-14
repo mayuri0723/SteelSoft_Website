@@ -45,9 +45,33 @@
          pointer-events: none !important;
          -webkit-animation-play-state: paused !important;
          animation-play-state: paused !important;
+      } ;
+
+      .f-container{
+			display:flex;
+			justify-content:space-evenly;
+		}
+      .ftco-heading-2{
+         margin: 0px 0px 0px 0px;
       }
 
-      ;
+		@media only screen and (max-width:1164px){
+			.list-unstyled li{
+				/* margin:30px 0; */
+            margin: 23px -5px 0px 0px;
+            /* padding: 0px 0px 0px 10px; */
+			}
+         /* .ftco-footer-social list-unstyled{
+				margin:-10px !important;
+			} */
+			.ftco-footer-social li a{
+				width:90px;
+			}
+			.container-fluid {
+				padding-left:0px;
+			}
+			
+		}
    </style>
    <script type="text/javascript" charset="UTF-8" src="./common.js.download"></script>
    <script type="text/javascript" charset="UTF-8" src="./controls.js.download"></script>
@@ -96,7 +120,7 @@
                      <li>
                      SteelSoft Design Brochure
                      </li></a>
-                  <li><a class="dropdown-item" href="#">
+                  <!-- <li><a class="dropdown-item" href="#">
                         Another action
                      </a></li>
                   <li>
@@ -104,7 +128,7 @@
                   </li>
                   <li><a class="dropdown-item" href="#">
                         Something else here
-                     </a></li>
+                     </a></li> -->
                </ul>
             </li>
          </ul>
@@ -131,14 +155,13 @@ background-size: cover;">
 
       <div class="careers" style=" 
  /* display: flex; */
- margin: 24px;
+ /* margin: 24px; */
     border-radius: -16px;
-    padding: 2px;
+    padding: 72px;
     background: linear-gradient(rgb(160 231 255 / 78%) , rgb(255 255 255 / 35%));
-    margin-top: 101px;">
-         <h2 style="
-   color: #000000ed;
-   margin-inline: 539px;"> WE ARE HIRING</h2>
+    margin-top: -4px;">
+         <h2 class="carer" style="
+   color: #000000ed;"> WE ARE HIRING</h2>
 
          <p style="
       color: #000000ed;">
@@ -175,25 +198,20 @@ background-size: cover;">
    <br>
    <div class="overlay"></div>
    <div class="container">
-      <div class="row mb-5">
-         <div class="col-md">
-            <div class="ftco-footer-widget mb-4" style="margin-left: -105px;">
-               <ul class="ftco-footer-social list-unstyled">
-                  <!-- Logo -->
-                  <!-- <img src="img/logo-ss.png" width="200" alt="steel soft"/> -->
-                  <img align="justify-content-left" height="300" width="400" src="img/logo-ss.png" style="height: 155px;
- width: 448px;">
-                  <!-- <img align="justify-content-left" height="200" width="400" src="img/World Map Steelsoft (1).png"> -->
-                  <li><a href="https://www.facebook.com/Steelsoft/" target="_blank"><img src="img/footer/facebook.png" style="width:33px"></a></li>
-                  <li><a href="https://www.linkedin.com/company/steelsoft-global/"  target="_blank"><img src="img/footer/linkedin.png" style="width:33px"></a>
-                  </li>
-                  <li><a href="https://www.instagram.com/steelsoftglobal/"  target="_blank"><img src="img/footer/instagram.png" style="width:33px"></a></li>
-                  <li><a href="https://www.youtube.com/channel/UC38wDl4V58KvnOfSQGUnlLw" target="_blank"><img src="img/footer/youtube.png" style="width:33px"></a></li>
-          
-               </ul>
-            </div>
+      <div class="row">
+         <div class="col-md-3">
+         <img src="img/logo-ss.png" style="width:100%;">
+            <ul class="ftco-footer-social list-unstyled">
+               
+               <li><a href="https://www.facebook.com/Steelsoft/" target="_blank"><img src="img/footer/facebook.png" style="width:33px"></a></li>
+               <li><a href="https://www.linkedin.com/company/steelsoft-global/"  target="_blank"><img src="img/footer/linkedin.png" style="width:33px"></a>
+               </li>
+               <li><a href="https://www.instagram.com/steelsoftglobal/"  target="_blank"><img src="img/footer/instagram.png" style="width:33px"></a></li>
+               <li><a href="https://www.youtube.com/channel/UC38wDl4V58KvnOfSQGUnlLw" target="_blank"><img src="img/footer/youtube.png" style="width:33px"></a></li>
+      
+            </ul>
          </div>
-         <div class="col-md">
+         <div class="col-md-2">
             <div class="ftco-footer-widget mb-4 ml-md-4">
                <h3 class="ftco-heading-2">Links</h3>
                <ul class="list-unstyled">
@@ -207,38 +225,28 @@ background-size: cover;">
                </ul>
             </div>
          </div>
-
-         <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-               <a href="https://goo.gl/maps/Xgi8TWMR9iCzhYD2A"> <img style="padding-left: -50px; padding-right: -50px; width: 300px;
-               height: 221px;
-               margin-top: 36px;
-               margin-left: -58px;" height="100%" width="367px" src="img/steelsoft map.png" alt="..." target="_blank"/></a>
-            </div>
-         </div>
-
-         <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-               <h3 class="ftco-heading-2">Location </h3>
-               <div class="block-23 mb-3">
-                  <ul>
-                     <li> <i class="bi bi-geo-alt-fill"></i> <span class="text"> Brahmavrunda Colony,<br>Flat No-301,Vihaan,Pimple Nilakh,<br>
-                           Pune 4110027</span></li>
-                     <li><a href="tel:853-019-1192"> <i class="bi bi-telephone-fill"></i><span
+      
+         <div class="col-md-7">
+            <div class="d-flex flex-wrap justify-content-evenly">
+               <div class="" style="width:310px;">
+                  <a href="https://goo.gl/maps/Xgi8TWMR9iCzhYD2A"  target="_blank"> <img style="width:300px; margin: 0px 0px 0px -29px;"src="img/steelsoft map.png" alt="..."/></a>
+               </div>
+            
+               <div class="" style="width:230px;">
+                  <h3 class="ftco-heading-2">Location </h3>
+                  <div class="block-23 mb-3">
+                     <ul>
+                        <li> <i class="bi bi-geo-alt-fill"></i> <span class="text"> Brahmavrunda Colony,<br>Flat No-301,Vihaan,Pimple Nilakh,<br>
+                              Pune 4110027</span></li>
+                        <li><a href="tel:853-019-1192"> <i class="bi bi-telephone-fill"></i><span
                               class="text">+918530191192</span></a></li>
-                     <li><a href="mailto:info@steelsoft-global.in?subject=Mail from Our Site"> <i
+                        <li><a href="mailto:info@steelsoft-global.in?subject=Mail from Our Site"> <i
                               class="bi bi-envelope-open-fill"></i> <span>info@steelsoft-global.in</span></a></li>
 
-                  </ul>
+                     </ul>
+                  </div>
                </div>
             </div>
-         </div>
-      </div>
-      <div class="row">
-         <div class="col-md-12 text-center">
-            <hr class="brd">
-            <span class="grey-text">Copyright ©2022 All rights Reserved <span class="white"> <a
-                     href="#">www.steelsoft-global.in </a></span>
          </div>
       </div>
    </div>

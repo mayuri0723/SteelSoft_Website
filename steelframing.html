@@ -36,17 +36,59 @@
     @import url("http://fonts.googleapis.com/earlyaccess/amstelvaralpha.css");
   </style>
 
-  <style type="text/css">
-    .scrollax-performance,
-    .scrollax-performance *,
-    .scrollax-performance *:before,
-    .scrollax-performance *:after {
-      pointer-events: none !important;
-      -webkit-animation-play-state: paused !important;
-      animation-play-state: paused !important;
+  <style>
+ 
+
+    .f-container {
+      display: flex;
+      justify-content: space-evenly;
     }
 
-    ;
+    .ftco-heading-2 {
+      margin: 0px 0px 0px 0px;
+    }
+
+    b{
+      margin-left: 0;
+    }
+    .cmpt{
+     display: flex;
+     flex-direction: column;
+     width: 99vw;
+     position: relative;
+    }
+
+    @media only screen and (max-width:1164px) {
+      .list-unstyled li {
+        /* margin:30px 0; */
+        margin: 23px -5px 0px 0px;
+        /* padding: 0px 0px 0px 10px; */
+      }
+
+      /* .ftco-footer-social list-unstyled{
+				margin:-10px !important;
+			} */
+      .ftco-footer-social li a {
+        width: 90px;
+      }
+
+      .container-fluid {
+        padding-left: 0px;
+      }
+ 
+    }
+
+
+
+    @media only screen and (min-device-width: 400px) and (min-device-width: 576px) {
+  .cmpt img {
+
+     width:85vw;
+     margin: auto;
+   }
+
+   
+ }
   </style>
 
   <script type="text/javascript" charset="UTF-8" src="./common.js.download"></script>
@@ -74,11 +116,11 @@
             <a class="nav-link" href="about.html"> About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="project.html">  Projects</a>
+            <a class="nav-link" href="project.html"> Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="services.html">
-                Services
+              Services
             </a>
           </li>
           <li class="nav-item">
@@ -89,16 +131,17 @@
               Steel Frame</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="img/lgs.pdf"  target="_blank" id="navbarDropdown" role="button" datDropdown><span
-                class="text" >
+            <a class="nav-link dropdown-toggle" href="img/lgs.pdf" target="_blank" id="navbarDropdown" role="button"
+              datDropdown><span class="text">
                 Download </span>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class=" nav-link dropdown-item " href="img/Design.pdf" target="_blank" >
-                 <li>
-                 SteelSoft Design Brochure
-                 </li></a>
-              <li><a class="dropdown-item" href="#">
+              <a class=" nav-link dropdown-item " href="img/Design.pdf" target="_blank">
+                <li>
+                  SteelSoft Design Brochure
+                </li>
+              </a>
+              <!-- <li><a class="dropdown-item" href="#">
                   Another action
                 </a></li>
               <li>
@@ -106,7 +149,7 @@
               </li>
               <li><a class="dropdown-item" href="#">
                   Something else here
-                </a></li>
+                </a></li> -->
             </ul>
           </li>
         </ul>
@@ -114,38 +157,39 @@
   </nav>
   <!-- Navigation End -->
 
-
-  <!-- <div class="clr"></div> -->
-  <!-- TOP BANNER START -->
   <div class="steel-bnr" style="background-image: url('img/about/steelframe3.jfif');">
     <div class="container">
       <div class="titl-erp">
-        <h1 class="text-white" style="font-size: 80px;"><b>Steel Framing</b></h1>
+        <h1 class="text-white" style="font-size: 80px;">
+          <b>Steel Framing</b>
+        </h1>
         <!-- <h4 class="text-white">Through our value engineering process and internal design knowledge</h4> -->
       </div>
     </div>
   </div>
   <!-- TOP BANNER CLOSED -->
 
-  
- 
-  <div class="componenet">
+
+  <!-- <div class="componenet"> -->
     <p style="text-align: center; font-size: 40px;">Component of LGSF Structure
     </p>
+    <!-- <div> -->
+      <div class="cmpt">
+    <img src="img/component.png" alt="" >
     <div>
-    <img src="img/component.png" alt="" style="width:156vh;">
-  
-<!-- 1st -->
-  <div>
     <button type="button" class="btn btn-secondary btn-sp" class="tooltips" data-bs-toggle="tooltip" data-bs-placement="top"
-      style="font-size: 1rem;
-      padding: 2px; top: 18%;
-    right: 33%;">
+      style="  font-size: 1rem;
+      padding: 2px;
+      top: 20%;
+      right: 33%;
+      width: 2rem;
+      height: 2rem;
+  ">
       1 </button>
-    <span class="tooltips" style="top: 16%;
-    font-size: 1rem;
+    <span class="tooltips" style="top: 24%;
+    font-size: 11px;
     right: 7%;
-    width: 15vw;
+    width: 36vw;
     background: whitesmoke;">
     <label>Roofing System</label>
     <ul>
@@ -156,19 +200,21 @@
       <li>Clay Tiles</li>
     </ul> 
      </span>
-  </div>
-<!-- 2nd -->
-  <div>
+    </div>
+     <!-- 2nd -->
+ <div>
     <button type="button" class="btn btn-secondary btn-sp" class="tooltips" data-bs-toggle="tooltip" data-bs-placement="top"
       style="font-size: 1rem;
       padding: 2px; 
-      top: 32%;
-    right: 31%;">
+      top: 53%;
+    right: 19%;
+    width: 2rem;
+      height: 2rem;">
       2 </button>
     <span class="tooltips" style="top: 31%;
     font-size: 1rem;
     right: 8%;
-    width: 15vw;
+    width: 20vw;
     background: whitesmoke;">
     <label>Structure
     </label>
@@ -179,20 +225,22 @@
       </li>
     </ul> 
      </span>
-  </div>
-<!-- 3rd -->
+    </div>
+    <!-- 3rd -->
   <div>
     <button type="button" class="btn btn-secondary btn-sp" class="tooltips" data-bs-toggle="tooltip" data-bs-placement="top"
-      style="font-size: 1rem;
-      padding: 2px; 
-      top: 30%;
-      right: 46%;">
+      style=" font-size: 1rem;
+      padding: 2px;
+      top: 40%;
+      right: 43%;
+      width: 2rem;
+      height: 2rem;">
       3 </button>
    
     <span class="tooltips" style="top: 40%;
-    font-size: 1rem;
-    right: 37%;
-    width: 15vw;
+    font-size: 11px;
+    right: 7%;
+    width: 34vw;
     background: whitesmoke;">
     <label>Flooring System
     </label>
@@ -208,18 +256,20 @@
     </ul> 
      </span>
   </div>
-  <!-- 4th -->
-  <div>
+   <!-- 4th -->
+   <div>
     <button type="button" class="btn btn-secondary btn-sp" class="tooltips" data-bs-toggle="tooltip" data-bs-placement="top"
       style="font-size: 1rem;
-      padding: 2px; 
-      top: 50%;
-    right: 70%;">
+      padding: 2px;
+      top: 75%;
+      right: 75%;
+      width: 2rem;
+      height: 2rem;">
       4 </button>
-    <span class="tooltips" style="top: 39%;
-    font-size: 1rem;
-    right: 84%;
-    width: 15vw;
+    <span class="tooltips" style="top: 48%;
+    font-size: 11px;
+    right: 67%;
+    width: 25vw;
     background: whitesmoke;">
     <label>Foundation
     </label>
@@ -232,19 +282,24 @@
       </li>
     </ul> 
      </span>
-  </div>   
-<!-- 5th -->
+  </div>  
+
+
+  <!-- 5th -->
   <div>
     <button type="button" class="btn btn-secondary btn-sp" class="tooltips" data-bs-toggle="tooltip" data-bs-placement="top"
       style="font-size: 1rem;
-      padding: 2px; 
-      top: 30%;
-    right: 70%;">
+      padding: 2px;
+      top: 40%;
+      right: 76%;
+      width: 2rem;
+      height: 2rem;
+  ">
       5 </button>
-    <span class="tooltips" style="top: 18%;
-    font-size: 1rem;
-    right: 78%;
-    width: 15vw;
+    <span class="tooltips" style="top: 42%;
+    font-size: 11px;
+    right: 46%;
+    width: 27vw;
     background: whitesmoke;">
     <label>Wall System
     </label>
@@ -264,88 +319,72 @@
     </ul> 
      </span>
   </div> 
-
   </div>
-<!-- component closed -->
+
+  
+  
+    
+ 
 
 
-  <!-- FOOTER -->
   <footer class="ftrbg">
-    <br>
-    <div class="overlay"></div>
-    <div class="container">
-       <div class="row mb-5">
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4" style="margin-left: -105px;">
-                <ul class="ftco-footer-social list-unstyled">
-                   <!-- Logo -->
-                   <!-- <img src="img/logo-ss.png" width="200" alt="steel soft"/> -->
-                   <img align="justify-content-left" height="300" width="400" src="img/logo-ss.png" style="height: 155px;
-  width: 448px;">
-                   <!-- <img align="justify-content-left" height="200" width="400" src="img/World Map Steelsoft (1).png"> -->
-                   <li><a href="https://www.facebook.com/Steelsoft/" target="_blank"><img src="img/footer/facebook.png" style="width:33px"></a></li>
-                   <li><a href="https://www.linkedin.com/company/steelsoft-global/"  target="_blank"><img src="img/footer/linkedin.png" style="width:33px"></a>
-                   </li>
-                   <li><a href="https://www.instagram.com/steelsoftglobal/"  target="_blank"><img src="img/footer/instagram.png" style="width:33px"></a></li>
-                   <li><a href="https://www.youtube.com/channel/UC38wDl4V58KvnOfSQGUnlLw" target="_blank"><img src="img/footer/youtube.png" style="width:33px"></a></li>
-           
-                </ul>
-             </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4 ml-md-4">
-                <h3 class="ftco-heading-2">Links</h3>
-                <ul class="list-unstyled">
-                   <li> <a href="index.php">Home</a></li>
-                   <li> <a href="about.html">About</a></li>
-                   <!-- <li><i class="bi bi-arrow-right-short"></i><a href="benefits.html">Benefits</a></li> -->
-                   <li><a href="project.html">Projects</a></li>
-                   <li><a href="services.html">Services</a></li>
-                   <li><a href="faq.html">FAQ</a></li>
-                   <li><a href="career.html">Career</a></li>
-                </ul>
-             </div>
-          </div>
+		<br>
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+				<img src="img/logo-ss.png" style="width:100%;">
+					<ul class="ftco-footer-social list-unstyled">
+						
+						<li><a href="https://www.facebook.com/Steelsoft/" target="_blank"><img src="img/footer/facebook.png" style="width:33px"></a></li>
+						<li><a href="https://www.linkedin.com/company/steelsoft-global/"  target="_blank"><img src="img/footer/linkedin.png" style="width:33px"></a>
+						</li>
+						<li><a href="https://www.instagram.com/steelsoftglobal/"  target="_blank"><img src="img/footer/instagram.png" style="width:33px"></a></li>
+						<li><a href="https://www.youtube.com/channel/UC38wDl4V58KvnOfSQGUnlLw" target="_blank"><img src="img/footer/youtube.png" style="width:33px"></a></li>
+			
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<div class="ftco-footer-widget mb-4 ml-md-4">
+						<h3 class="ftco-heading-2">Links</h3>
+						<ul class="list-unstyled">
+							<li> <a href="index.php">Home</a></li>
+							<li> <a href="about.html">About</a></li>
+							<!-- <li><i class="bi bi-arrow-right-short"></i><a href="benefits.html">Benefits</a></li> -->
+							<li><a href="project.html">Projects</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="career.html">Career</a></li>
+						</ul>
+					</div>
+				</div>
+			
+				<div class="col-md-7">
+					<div class="d-flex flex-wrap justify-content-evenly">
+						<div class="" style="width:310px;">
+							<a href="https://goo.gl/maps/Xgi8TWMR9iCzhYD2A"  target="_blank"> <img style="width:300px; margin: 0px 0px 0px -29px;"src="img/steelsoft map.png" alt="..."/></a>
+						</div>
+					
+						<div class="" style="width:230px;">
+							<h3 class="ftco-heading-2">Location </h3>
+							<div class="block-23 mb-3">
+								<ul>
+									<li> <i class="bi bi-geo-alt-fill"></i> <span class="text"> Brahmavrunda Colony,<br>Flat No-301,Vihaan,Pimple Nilakh,<br>
+											Pune 4110027</span></li>
+									<li><a href="tel:853-019-1192"> <i class="bi bi-telephone-fill"></i><span
+											class="text">+918530191192</span></a></li>
+									<li><a href="mailto:info@steelsoft-global.in?subject=Mail from Our Site"> <i
+											class="bi bi-envelope-open-fill"></i> <span>info@steelsoft-global.in</span></a></li>
 
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-                <a href="https://goo.gl/maps/Xgi8TWMR9iCzhYD2A"> <img style="padding-left: -50px; padding-right: -50px; width: 300px;
-                height: 221px;
-                margin-top: 36px;
-                margin-left: -58px;" height="100%" width="367px" src="img/steelsoft map.png" alt="..." target="_blank"/></a>
-             </div>
-          </div>
-
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-                <h3 class="ftco-heading-2">Location </h3>
-                <div class="block-23 mb-3">
-                   <ul>
-                      <li> <i class="bi bi-geo-alt-fill"></i> <span class="text"> Brahmavrunda Colony,<br>Flat No-301,Vihaan,Pimple Nilakh,<br>
-                            Pune 4110027</span></li>
-                      <li><a href="tel:853-019-1192"> <i class="bi bi-telephone-fill"></i><span
-                               class="text">+918530191192</span></a></li>
-                      <li><a href="mailto:info@steelsoft-global.in?subject=Mail from Our Site"> <i
-                               class="bi bi-envelope-open-fill"></i> <span>info@steelsoft-global.in</span></a></li>
-
-                   </ul>
-                </div>
-             </div>
-          </div>
-       </div>
-       <div class="row">
-          <div class="col-md-12 text-center">
-             <hr class="brd">
-             <span class="grey-text">Copyright ©2022 All rights Reserved <span class="white"> <a
-                      href="#">www.steelsoft-global.in </a></span>
-          </div>
-       </div>
-    </div>
- </footer>
-  <!-- FOOTER END -->
-  <div id="ftco-loader" class="fullscreen">
-    <img src="img/logo-ss.png">
-  </div>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+ 
   <script>
     const upBtn = document.querySelector('.up-button');
     const downBtn = document.querySelector('.down-button');
@@ -430,7 +469,7 @@
     integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
     crossorigin="anonymous"></script>
 
+    
 </body>
-<!--  -->
 
 </html>

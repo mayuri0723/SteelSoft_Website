@@ -88,7 +88,9 @@ ul {
 .we-offer-area.text-center .item {
   background: #ffffff none repeat scroll 0 0;
   border: medium none;
-  padding: 67px 40px 64px;
+  padding: 35px 30px;
+  width:100%;
+  height:100%;
 }
 
 .we-offer-area.text-center .item i {

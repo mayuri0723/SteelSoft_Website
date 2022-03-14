@@ -9245,7 +9245,7 @@ textarea.form-control {
   padding: 1px; }
   .block-23 ul li,
    .block-23 ul li > a { 
-    margin-inline: 1px;
+    margin-inline: -3px;
     display: table;
     /* line-height: 1.5; */
     /* margin-bottom: 19px; */
@@ -9654,11 +9654,16 @@ textarea.form-control {
     background-repeat: no-repeat;
     background-size: cover; }
 
-    .faq-bnr{width: 100%; height: auto; background-color:#252525; padding: 51px;text-align: center;  
+    .faq-bnr{
+      width: 100%;
+       height: auto;
+        /* background-color:#252525; */
+         padding: 51px;
+         text-align: center;  
      /* background-image: url("img/faq.jpg"); */
      background-position: center center;
      background-repeat: no-repeat;
-     background-size: cover; }
+     background-size: 100%; }
 
     .career-bnr{width: 100%; height: auto; background-color:#252525; padding:51px;text-align: center;  
       background-image: url('img/about/career.jpg');
@@ -9860,7 +9865,7 @@ textarea.form-control {
   text-transform: uppercase;
 }
 .snip1273 p {
-  font-size: 0.8em;
+  font-size: 0.7em;
   font-weight: 500;
   margin: 0 0 15px;
 }
@@ -10173,7 +10178,7 @@ a:focus, a:hover {
 /*contact page css  */
 .contact-page-sec{
   margin-left: 57px;
-  padding: 60px 0;
+  padding: 60px ;
   min-height: 100vh;
   margin-top: 12px;
 }
@@ -10271,9 +10276,12 @@ font-size: 14px;
 }
 .contact-page-form {
   margin-left: 11pc;
-display: inline-block;
-width: 123%;
-margin-top: 30px;
+  /* margin: auto; */
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-page-map {
