@@ -41,15 +41,14 @@
 		@import url("http://fonts.googleapis.com/earlyaccess/amstelvaralpha.css");
 	</style>
 	<style type="text/css">
-		.scrollax-performance,
+		/* .scrollax-performance,
 		.scrollax-performance *,
 		.scrollax-performance *:before,
 		.scrollax-performance *:after {
 			pointer-events: none !important;
 			-webkit-animation-play-state: paused !important;
 			animation-play-state: paused !important;
-		}
-
+		} */
 		.about-image {
 			width: 55vw;
 			height: 30vw;
@@ -79,9 +78,9 @@
 			background-color: black;
 		}
 
-		.carousel-caption {
+		/* .carousel-caption {
 			top: 45%;
-		}
+		} */
 
 		.carousel-caption h5 {
 			font-size: 16px;
@@ -141,6 +140,11 @@
          margin: 0px 0px 0px 0px;
       }
 
+	  @media only screen and (max-width:400x){
+		  b{
+			  margin-left:0px ;
+		  }
+	  }    
 		@media only screen and (max-width:1164px){
 			.list-unstyled li{
 				/* margin:30px 0; */
@@ -157,7 +161,9 @@
 				padding-left:0px;
 			}
 			
+			
 		}
+
 		/*
          ORDER MATTERS SO DECIDE ACCORDINGLY
       */
@@ -178,7 +184,9 @@
 			.my-row {
 				flex-direction: column;
 				align-items: center;
-			}
+			} 
+
+			
 		}
 /* 
         .olcards li {
@@ -231,8 +239,137 @@
         }
 		}
 
+		.f-container{
+			display:flex;
+			justify-content:space-evenly;
+		}
+		@media only screen and (max-width:1164px){
+			.list-unstyled li{
+				margin:30px 0;
+			}
+			.ftco-footer-social li a{
+				width:90px;
+			}
+			.container-fluid {
+				padding-left:0p;
+			}
+			
+		}
 
 
+		/**
+			
+		 * 
+		 */
+			.footer-row{
+				display:flex;
+				width:100%;
+				justify-content:space-evenly;
+				flex-wrap: wrap;
+			}
+			.footer-column{
+				display:flex;
+				flex-direction:column;
+			}
+			.footer-ul{
+				display:flex;
+				padding:0;
+				margin:auto;
+				width:265px;
+				flex-wrap:wrap;
+				justify-content:space-evenly;
+				list-style-type:none;
+			}
+			.footer-ul-links{
+				display:flex;
+				padding:0;
+				margin:auto;
+				width:145px;
+				align-items:center;
+				flex-direction:column;
+				list-style-type:none;
+			}
+		
+			.footer-col-sp{
+				flex-direction: row;
+				justify-content: space-between;
+				width: max-content;
+			}
+			
+			.footer-ul-links li{
+				margin:0px auto 0px 10px;
+			}
+			.footer-ul-links li a{
+				width:110px;
+				display:block;
+
+			}
+			.footer-column h3{
+				align-self: center;
+				margin: 10% auto 0px 10px;
+				font-size: 2.5rem;
+			}
+			.footer-ul li{
+				margin:20px;
+			}
+			.footer-column img{
+				width: 255px;
+    			height: 100px
+			}
+			.footer-ul li a img{
+				width:45px; height:45px; margin:10px;
+			}
+			.footer-sp-image a{
+				display:block;
+			}
+			.footer-sp-image a img{
+				width: 375px;
+   				height: 300px;
+			}
+			@media only screen and (max-width:1090px){
+				.footer-ul-links{
+					flex-direction:row;
+					flex-wrap:wrap;
+					width:100%;
+					width:305px;
+					margin:50px auto;
+					justify-content:space-evenly;
+				}
+				.footer-ul-links li{
+					margin:20px 20px;
+				}
+			}
+		@media only screen and (max-width:950px){
+			.footer-sp-image a img{
+				width:360px;
+			}
+			.footer-row{
+				align-items:center;
+				flex-direction:column;
+			}
+			.footer-column{
+				width:100%;
+				align-items:center;
+			}
+			.footer-column h3{
+				margin:auto;
+				font-size:2rem;
+			}
+			.footer-column img{
+				width:40vw;
+			}
+			.footer-ul{
+				width:100%;
+			}
+			.footer-col-sp{
+				flex-direction:column;
+			}
+			
+		}
+
+		/**
+		 *  
+		 */
 	</style>
 	<script type="text/javascript" charset="UTF-8" src="./common.js.download"></script>
 	<script type="text/javascript" charset="UTF-8" src="./controls.js.download"></script>
@@ -259,7 +396,7 @@
 							Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="about.html"></i> About</a>
+						<a class="nav-link" href="about.html">About</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="project.html"> Projects</a>
@@ -311,7 +448,8 @@
 	<div class="cont-bnr" style="background-image: url('img/about/about6.jpg');">
 		<div class="container">
 			<div class="titl-erp">
-				<h1 class="text-white" style="font-size: 80px;"><b>About</b></h1>
+				<h1 class="text-white" style="font-size: 80px;">
+					<b>About</b></h1>
 				<h4></h4>
 				<!-- <h4>Through our value engineering process and internal design knowledge</h4> -->
 			</div>
@@ -960,73 +1098,58 @@
 
 
 	<footer class="ftrbg">
-		<br>
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<img src="img/logo-ss.png" style="width:100%;">
-					<ul class="ftco-footer-social list-unstyled">
-						<!-- Logo -->
-						<!-- <img src="img/logo-ss.png" width="200" alt="steel soft"/> -->
+		<div class="footer-row">
+			<div class="footer-column ">
+				<img src="img/logo-ss.png" >
+				<ul class="footer-ul">
+					<!-- Logo -->
+					<!-- <img src="img/logo-ss.png" width="200" alt="steel soft"/> -->
+					
+					<!-- <img align="justify-content-left" height="200" width="400" src="img/World Map Steelsoft (1).png"> -->
+					<li><a href="https://www.facebook.com/Steelsoft/" target="_blank"><img src="img/footer/facebook.png" ></a></li>
+					<li><a href="https://www.linkedin.com/company/steelsoft-global/"  target="_blank"><img src="img/footer/linkedin.png" ></a></li>
+					<li><a href="https://www.instagram.com/steelsoftglobal/"  target="_blank"><img src="img/footer/instagram.png" ></a></li>
+					<li><a href="https://www.youtube.com/channel/UC38wDl4V58KvnOfSQGUnlLw" target="_blank"><img src="img/footer/youtube.png" ></a></li>
+		
+				</ul>
+			</div>
+			<div class="footer-column">
+				<h3 class="ftco-heading-2">Links</h3>
+				<ul class="footer-ul-links">
+					<li> <a href="index.php">Home</a></li>
+					<li> <a href="about.html">About</a></li>
+					<!-- <li><i class="bi bi-arrow-right-short"></i><a href="benefits.html">Benefits</a></li> -->
+					<li><a href="project.html">Projects</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="career.html">Career</a></li>
+				</ul>
+			</div>
 
-						<!-- <img align="justify-content-left" height="200" width="400" src="img/World Map Steelsoft (1).png"> -->
-						<li><a href="https://www.facebook.com/Steelsoft/" target="_blank"><img
-									src="img/footer/facebook.png" style="width:33px"></a></li>
-						<li><a href="https://www.linkedin.com/company/steelsoft-global/" target="_blank"><img
-									src="img/footer/linkedin.png" style="width:33px"></a>
-						</li>
-						<li><a href="https://www.instagram.com/steelsoftglobal/" target="_blank"><img
-									src="img/footer/instagram.png" style="width:33px"></a></li>
-						<li><a href="https://www.youtube.com/channel/UC38wDl4V58KvnOfSQGUnlLw" target="_blank"><img
-									src="img/footer/youtube.png" style="width:33px"></a></li>
-
-					</ul>
+			<div class="footer-column footer-col-sp">
+				<div class="footer-sp-image">
+					<a href="https://goo.gl/maps/Xgi8TWMR9iCzhYD2A"> 
+						<img src="img/steelsoft map.png" alt="..." target="_blank"/></a>
 				</div>
-				<div class="col-md-2">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<h3 class="ftco-heading-2">Links</h3>
-						<ul class="list-unstyled">
-							<li> <a href="index.php">Home</a></li>
-							<li> <a href="about.html">About</a></li>
-							<!-- <li><i class="bi bi-arrow-right-short"></i><a href="benefits.html">Benefits</a></li> -->
-							<li><a href="project.html">Projects</a></li>
-							<li><a href="services.html">Services</a></li>
-							<li><a href="faq.html">FAQ</a></li>
-							<li><a href="career.html">Career</a></li>
+			
+				<div>
+					<h3 class="ftco-heading-2" style="margin-top:5%;">Location </h3>
+					<div class="block-23 mb-3">
+						<ul>
+							<li> <i class="bi bi-geo-alt-fill"></i> <span class="text"> Brahmavrunda Colony,<br>Flat No-301,Vihaan,Pimple Nilakh,<br>
+									Pune 4110027</span></li>
+							<li><a href="tel:853-019-1192"> <i class="bi bi-telephone-fill"></i><span
+									class="text">+918530191192</span></a></li>
+							<li><a href="mailto:info@steelsoft-global.in?subject=Mail from Our Site"> <i
+									class="bi bi-envelope-open-fill"></i> <span>info@steelsoft-global.in</span></a></li>
+
 						</ul>
-					</div>
-				</div>
-
-				<div class="col-md-7">
-					<div class="d-flex flex-wrap justify-content-evenly">
-						<div class="" style="width:310px;">
-							<a href="https://goo.gl/maps/Xgi8TWMR9iCzhYD2A"> <img style="width:300px;"
-									src="img/steelsoft map.png" alt="..." target="_blank" /></a>
-						</div>
-
-						<div class="" style="width:230px;">
-							<h3 class="ftco-heading-2">Location </h3>
-							<div class="block-23 mb-3">
-								<ul>
-									<li> <i class="bi bi-geo-alt-fill"></i> <span class="text"> Brahmavrunda
-											Colony,<br>Flat
-											No-301,Vihaan,Pimple Nilakh,<br>
-											Pune 4110027</span></li>
-									<li><a href="tel:853-019-1192"> <i class="bi bi-telephone-fill"></i><span
-												class="text">+918530191192</span></a></li>
-									<li><a href="mailto:info@steelsoft-global.in?subject=Mail from Our Site"> <i
-												class="bi bi-envelope-open-fill"></i>
-											<span>info@steelsoft-global.in</span></a></li>
-
-								</ul>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
+
 
 	<script></script>
 

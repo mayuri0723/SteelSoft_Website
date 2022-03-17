@@ -34,49 +34,191 @@
       @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
       @import url("http://fonts.googleapis.com/earlyaccess/amstelvaralpha.css");
 
-      .x-image{
-         width:200px;
-         height:150px;
+      .x-image {
+         width: 200px;
+         height: 150px;
          border-radius: 10px;
       }
-
    </style>
-   	<style type="text/css">
-         .scrollax-performance,
+   <style type="text/css">
+      /* .scrollax-performance,
          .scrollax-performance *,
          .scrollax-performance *:before,
          .scrollax-performance *:after {
             pointer-events: none !important;
             -webkit-animation-play-state: paused !important;
             animation-play-state: paused !important;
+         } */
+      b {
+         margin-left: 0;
+      }
+
+      .cmpt {
+         display: flex;
+         flex-direction: column;
+         width: 99vw;
+         position: relative;
+      }
+
+      .f-container {
+         display: flex;
+         justify-content: space-evenly;
+      }
+
+      @media only screen and (max-width:1164px) {
+         .list-unstyled li {
+            margin: 30px 0;
          }
-   
-         .f-container{
-            display:flex;
-            justify-content:space-evenly;
+
+         .ftco-footer-social li a {
+            width: 90px;
          }
-         .ftco-heading-2{
-            margin: 0px 0px 0px 0px;
+
+         .container-fluid {
+            padding-left: 0p;
          }
-   
-         @media only screen and (max-width:1164px){
-            .list-unstyled li{
-               /* margin:30px 0; */
-               margin: 23px -5px 0px 0px;
-               /* padding: 0px 0px 0px 10px; */
-            }
-            /* .ftco-footer-social list-unstyled{
-               margin:-10px !important;
-            } */
-            .ftco-footer-social li a{
-               width:90px;
-            }
-            .container-fluid {
-               padding-left:0px;
-            }
-            
+
+      }
+
+
+
+      .footer-row {
+         display: flex;
+         width: 100%;
+         justify-content: space-evenly;
+         flex-wrap: wrap;
+      }
+
+      .footer-column {
+         display: flex;
+         flex-direction: column;
+      }
+
+      .footer-ul {
+         display: flex;
+         padding: 0;
+         margin: auto;
+         width: 265px;
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+         list-style-type: none;
+      }
+
+      .footer-ul-links {
+         display: flex;
+         padding: 0;
+         margin: auto;
+         width: 145px;
+         align-items: center;
+         flex-direction: column;
+         list-style-type: none;
+      }
+
+      .footer-col-sp {
+         flex-direction: row;
+         justify-content: space-between;
+         width: max-content;
+      }
+
+      .footer-ul-links li {
+         margin: 0px auto 0px 10px;
+      }
+
+      .footer-ul-links li a {
+         width: 110px;
+         display: block;
+
+      }
+
+      .footer-column h3 {
+         align-self: center;
+         margin: 10% auto 0px 10px;
+         font-size: 2.5rem;
+      }
+
+      .footer-ul li {
+         margin: 20px;
+      }
+
+      .footer-column img {
+         width: 255px;
+         height: 100px
+      }
+
+      .footer-ul li a img {
+         width: 45px;
+         height: 45px;
+         margin: 10px;
+      }
+
+      .footer-sp-image a {
+         display: block;
+      }
+
+      .footer-sp-image a img {
+         width: 375px;
+         height: 300px;
+      }
+
+      @media only screen and (max-width:1090px) {
+         .footer-ul-links {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            width: 305px;
+            margin: 50px auto;
+            justify-content: space-evenly;
          }
-      </style>
+
+         .footer-ul-links li {
+            margin: 20px 20px;
+         }
+      }
+
+      @media only screen and (max-width:950px) {
+         .footer-sp-image a img {
+            width: 360px;
+         }
+
+         .footer-row {
+            align-items: center;
+            flex-direction: column;
+         }
+
+         .footer-column {
+            width: 100%;
+            align-items: center;
+         }
+
+         .footer-column h3 {
+            margin: auto;
+            font-size: 2rem;
+         }
+
+         .footer-column img {
+            width: 40vw;
+         }
+
+         .footer-ul {
+            width: 100%;
+         }
+
+         .footer-col-sp {
+            flex-direction: column;
+         }
+
+      }
+
+      @media only screen and (min-device-width: 400px) and (min-device-width: 576px) {
+         .cmpt img {
+
+            width: 85vw;
+            margin: auto;
+         }
+
+
+      }
+   </style>
 </head>
 
 <body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0" class="body-bg">
@@ -96,12 +238,12 @@
                   <a class="nav-link" href="about.html"> About</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="project.html">  Projects</a>
+                  <a class="nav-link" href="project.html"> Projects</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="services.html">
-                     
-                        Services
+
+                     Services
                   </a>
                </li>
                <li class="nav-item">
@@ -112,15 +254,16 @@
                   <a class="nav-link" href="contact.html">Contact</a>
                </li>
                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="img/lgs.pdf"  target="_blank" id="navbarDropdown" role="button"
-                     datDropdown><span class="text">
+                  <a class="nav-link dropdown-toggle" href="img/lgs.pdf" target="_blank" id="navbarDropdown"
+                     role="button" datDropdown><span class="text">
                         Download </span>
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                      <a class=" nav-link dropdown-item " href="img/Design.pdf" target="_blank">
                         <li>
-                        SteelSoft Design Brochure
-                        </li></a>
+                           SteelSoft Design Brochure
+                        </li>
+                     </a>
                      <!-- <li><a class="dropdown-item" href="#">
                            Another action
                         </a></li>
@@ -147,7 +290,7 @@
       </div>
    </div>
 
-   
+
 
    <div class="servicebackground" style=" background-color: #d0c2ae;
 padding: 3px;
@@ -173,9 +316,12 @@ background-size: cover;">
                      <!-- <i class="fas fa-pen-fancy"></i> -->
                      <h4>Architectural Design</h4>
                      <p style="font-size: 15px;text-align: justify;">
-                        An initial step an engineer will take is to review the drawings produced by the architect/building designer.
-                        We at SteelSoft will look at various types of units, its location and framing, type of accommodation, type of support systems available.
-                        This information will be referred back to the architect to make any necessary adjustments if required.
+                        An initial step an engineer will take is to review the drawings produced by the
+                        architect/building designer.
+                        We at SteelSoft will look at various types of units, its location and framing, type of
+                        accommodation, type of support systems available.
+                        This information will be referred back to the architect to make any necessary adjustments if
+                        required.
                      </p>
                   </div>
                </div>
@@ -187,9 +333,13 @@ background-size: cover;">
                      <a href="https://icons8.com/icon/N4sIxq943XZ1/design"></a>
                      <img src="https://img.icons8.com/ios-filled/50/000000/design--v2.png" style="height: 64px;" />
                      <h4>Structural Design</h4>
-                     <p style="font-size: 15px; text-align: justify;">The engineer in-charge will determine site specific requirements for the structure 
-                        that are dependent on its location.Once the environmental factors have been determined, the engineer will perform an initial design of building elements such as roof, wall and floor layouts per the architectural drawings, footings and/or slabs, bearing walls including beams and columns, and identify potential mechanical, electrical, and plumbing conflicts. 
-                        
+                     <p style="font-size: 15px; text-align: justify;">The engineer in-charge will determine site
+                        specific requirements for the structure
+                        that are dependent on its location.Once the environmental factors have been determined, the
+                        engineer will perform an initial design of building elements such as roof, wall and floor
+                        layouts per the architectural drawings, footings and/or slabs, bearing walls including beams and
+                        columns, and identify potential mechanical, electrical, and plumbing conflicts.
+
                      </p>
                   </div>
                </div>
@@ -201,9 +351,12 @@ background-size: cover;">
                      <img src="img/iconofservices/blueprint.png" style="
                       width: 67px;" />
                      <h4>MEP Drafting & Services </h4>
-                     <p style="font-size: 15px; text-align: justify;" >SteelSoft renders expert engineering design consultancy services for HVAC, Plumbing, Fire Protection, 
-                        Electricals, Security, Public Address, Building Management System and much more, for Residential, 
-                        Township, High Rise, Commercial, IT Park, Hotels, Hospitals, Malls & Multiplexes, Institutional & Industrial sectors. The Company is capable of managing projects of any scale and complexity.
+                     <p style="font-size: 15px; text-align: justify;">SteelSoft renders expert engineering design
+                        consultancy services for HVAC, Plumbing, Fire Protection,
+                        Electricals, Security, Public Address, Building Management System and much more, for
+                        Residential,
+                        Township, High Rise, Commercial, IT Park, Hotels, Hospitals, Malls & Multiplexes, Institutional
+                        & Industrial sectors. The Company is capable of managing projects of any scale and complexity.
                      </p>
                   </div>
                </div>
@@ -215,8 +368,10 @@ background-size: cover;">
                      <img src="img/iconofservices/project-management.png" />
                      <h4>Project Management</h4>
                      <p style="font-size: 15px; text-align: justify;">
-                        We provide Project Management consultancy services for Design and Construction which includes designs support, 
-                        planning, monitoring, quality checking, tracking progress of execution on day-to-day basis by deploying permanent man power at site.
+                        We provide Project Management consultancy services for Design and Construction which includes
+                        designs support,
+                        planning, monitoring, quality checking, tracking progress of execution on day-to-day basis by
+                        deploying permanent man power at site.
                      </p>
                   </div>
                </div>
@@ -228,7 +383,9 @@ background-size: cover;">
                      <img src="img/iconofservices/conversation.png" />
                      <h4>Project Consultation</h4>
                      <p style="font-size: 15px; text-align: justify;">
-                        We provide Peer Review, Proof consultancy and value engineering services for design and construction. This includes checking the existing concept design, detail designs, bill of quantities,
+                        We provide Peer Review, Proof consultancy and value engineering services for design and
+                        construction. This includes checking the existing concept design, detail designs, bill of
+                        quantities,
                         technical and commercial specification etc. and suggesting means for optimization of designs.
                      </p>
                   </div>
@@ -240,8 +397,11 @@ background-size: cover;">
                   <div class="item">
                      <img src="img/iconofservices/fabrication.png" style="Width: 91px;" />
                      <h4>HR Fabrication</h4>
-                     <p style="font-size: 15px; text-align: justify;">Our top priority is to provide the right information to ease fabrication as well as erection. Our Structural Steel Detailing Services includes preparing the accurate and complete fabrication drawings for all structural steel components as per Structural Design Drawings. 
-                        These components commonly include; Columns, Beams, Braces, Frames, Girts, Purlins etc. 
+                     <p style="font-size: 15px; text-align: justify;">Our top priority is to provide the right
+                        information to ease fabrication as well as erection. Our Structural Steel Detailing Services
+                        includes preparing the accurate and complete fabrication drawings for all structural steel
+                        components as per Structural Design Drawings.
+                        These components commonly include; Columns, Beams, Braces, Frames, Girts, Purlins etc.
                         We have our own fabrication team.
                   </div>
                </div>
@@ -253,8 +413,11 @@ background-size: cover;">
                      <img src="img/iconofservices/analyze.png" />
                      <h4>Feasibility Study</h4>
                      <p style="font-size: 15px; text-align: justify;">
-                        Getting the project to a company is the basic and the pre requirement for which everyone strives to achieve in this competitive market. Hence accurate pre-study analysis of a given project in terms of steel quantity plays a key role for achieving a project. Having global experience of more than +20yrs, 
-                        we at SteelSoft help to give the close estimate for a steel quantity by carrying out the 
+                        Getting the project to a company is the basic and the pre requirement for which everyone strives
+                        to achieve in this competitive market. Hence accurate pre-study analysis of a given project in
+                        terms of steel quantity plays a key role for achieving a project. Having global experience of
+                        more than +20yrs,
+                        we at SteelSoft help to give the close estimate for a steel quantity by carrying out the
                         feasibility study for a given project.
                      </p>
                   </div>
@@ -266,7 +429,9 @@ background-size: cover;">
                      <img src="img/iconofservices/model.png" />
                      <h4>BIM Modeling</h4>
                      <p style="font-size: 15px; text-align: justify;">
-                        Our teams provide end-to-end Building Information Modeling (BIM) services right from 2D & 3D CAD drafting designs to BIM implementation and consulting with an expertise in Virtual Designs and Construction (VDC) technology. Our consultants build partnership with architects, 
+                        Our teams provide end-to-end Building Information Modeling (BIM) services right from 2D & 3D CAD
+                        drafting designs to BIM implementation and consulting with an expertise in Virtual Designs and
+                        Construction (VDC) technology. Our consultants build partnership with architects,
                         engineers, contractors, surveyors and manufacturing firms to gauge BIM methodologies.
                      </p>
                   </div>
@@ -278,37 +443,44 @@ background-size: cover;">
                      <img src="img/iconofservices/financial-guide.png" style="width: 67px;" />
                      <h4>Project Costing & Estimation</h4>
                      <p style="font-size: 15px; text-align: justify;">
-                        We provide quantity estimation for all types of Real estate, Infrastructure, 
-                        Industrial and commercial projects for our esteemed clients in India as well as abroad. 
-                        We provide estimation for different stages of constructions like conceptual pre-launch, detailed pre-contract / tender estimate, post-contract/GFC estimate based on the client objectives.
+                        We provide quantity estimation for all types of Real estate, Infrastructure,
+                        Industrial and commercial projects for our esteemed clients in India as well as abroad.
+                        We provide estimation for different stages of constructions like conceptual pre-launch, detailed
+                        pre-contract / tender estimate, post-contract/GFC estimate based on the client objectives.
                      </p>
                   </div>
                </div>
                <!-- End Single Item -->
 
-                <!-- Single Item -->
-                <div class="col-md-4 col-sm-6 equal-height">
+               <!-- Single Item -->
+               <div class="col-md-4 col-sm-6 equal-height">
                   <div class="item">
                      <img src="img/iconofservices/research.png" style="width: 67px;" />
                      <h4>Research on Codes & Standards</h4>
                      <p style="font-size: 15px; text-align: justify;">
-                        Solutions to every architectural concept is the need of day. People are more prone to Architectural looks rather than going with simple geometrical shape structure. 
-                        At SteelSoft, we are constantly discovering the ideas, trends and technologies that are shaping our world and strive every day to make innovation a part of the mindset of our colleagues from requirement to execution
-                        
+                        Solutions to every architectural concept is the need of day. People are more prone to
+                        Architectural looks rather than going with simple geometrical shape structure.
+                        At SteelSoft, we are constantly discovering the ideas, trends and technologies that are shaping
+                        our world and strive every day to make innovation a part of the mindset of our colleagues from
+                        requirement to execution
+
                      </p>
                   </div>
                </div>
                <!-- End Single Item -->
 
-                 <!-- Single Item -->
-                 <div class="col-md-4 col-sm-6 equal-height">
+               <!-- Single Item -->
+               <div class="col-md-4 col-sm-6 equal-height">
                   <div class="item">
                      <img src="img/iconofservices/construction.png" style="width: 67px;" />
                      <h4>Construction</h4>
                      <p style="font-size: 15px; text-align: justify;">
-                        Solutions to every architectural concept is the need of day. People are more prone to Architectural looks rather than going with simple geometrical shape structure. 
-                        At SteelSoft, we are constantly discovering the ideas, trends and technologies that are shaping our world and strive every day to make innovation a part of the mindset of our colleagues from requirement to execution
-                        
+                        Solutions to every architectural concept is the need of day. People are more prone to
+                        Architectural looks rather than going with simple geometrical shape structure.
+                        At SteelSoft, we are constantly discovering the ideas, trends and technologies that are shaping
+                        our world and strive every day to make innovation a part of the mindset of our colleagues from
+                        requirement to execution
+
                      </p>
                   </div>
                </div>
@@ -320,9 +492,10 @@ background-size: cover;">
                      <img src="img/iconofservices/gear (1).png" style="width: 67px;" />
                      <h4>Advanced Analysis & Design</h4>
                      <p style="font-size: 15px; text-align: justify;">
-                      Steelsoft works deligently to co-ordinate performance based design, progressive collaspe analysis and blast analysis design
-                      for cold-formed steel structure.
-                        
+                        Steelsoft works deligently to co-ordinate performance based design, progressive collaspe
+                        analysis and blast analysis design
+                        for cold-formed steel structure.
+
                      </p>
                   </div>
                </div>
@@ -330,10 +503,10 @@ background-size: cover;">
             </div>
          </div>
       </section>
-   
+
       <h1 style="text-align: center;">CFS – Operation Sequence
       </h1>
-      
+
       <!-- process -->
       <div class="timeline">
          <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2">
@@ -343,7 +516,7 @@ background-size: cover;">
                 object-fit: cover;
                 margin-left: -32px;"></i>
                <div class="timeline__event__date" style="">
-                  <img src="img/process/enquiry.png"class ="x-image" >
+                  <img src="img/process/enquiry.png" class="x-image">
                </div>
             </div>
             <div class="timeline__event__content ">
@@ -365,7 +538,7 @@ background-size: cover;">
                   object-fit: cover;
                   margin-left: -32px;"></i>
                <div class="timeline__event__date" style="">
-               <img src="img/process/design-engineer.jpg" class ="x-image"/>
+                  <img src="img/process/design-engineer.jpg" class="x-image" />
                </div>
             </div>
             <div class="timeline__event__content">
@@ -390,7 +563,7 @@ background-size: cover;">
                   margin-left: -32px;"></i>
 
                <div class="timeline__event__date" style="">
-                  <img src="img/process/modelling.jpg" class ="x-image"/>
+                  <img src="img/process/modelling.jpg" class="x-image" />
                </div>
             </div>
             <div class="timeline__event__content">
@@ -413,8 +586,8 @@ background-size: cover;">
                   object-fit: cover;
                   margin-left: -32px;"></i>
 
-               <div class="timeline__event__date" >
-                  <img src="img/process/MaduraiManufacturing.jpg" class ="x-image"/>
+               <div class="timeline__event__date">
+                  <img src="img/process/MaduraiManufacturing.jpg" class="x-image" />
                </div>
             </div>
             <div class="timeline__event__content">
@@ -437,8 +610,8 @@ background-size: cover;">
                   object-fit: cover;
                   margin-left: -32px;"></i>
 
-               <div class="timeline__event__date" >
-                  <img src="img/process/assembly.jpg" class ="x-image"/>
+               <div class="timeline__event__date">
+                  <img src="img/process/assembly.jpg" class="x-image" />
                </div>
             </div>
             <div class="timeline__event__content">
@@ -460,8 +633,8 @@ background-size: cover;">
          height: 87px;
          object-fit: cover;
          margin-left: -32px;"></i>
-               <div class="timeline__event__date" >
-                  <img src="img/process/finish.jpeg" class ="x-image"/>
+               <div class="timeline__event__date">
+                  <img src="img/process/finish.jpeg" class="x-image" />
                </div>
             </div>
             <div class="timeline__event__content">
@@ -482,8 +655,8 @@ background-size: cover;">
                height: 87px;
                object-fit: cover;
                margin-left: -32px;"></i>
-               <div class="timeline__event__date" >
-                  <img src="img/process/completion.png" class ="x-image"/>
+               <div class="timeline__event__date">
+                  <img src="img/process/completion.png" class="x-image" />
                </div>
             </div>
             <div class="timeline__event__content">
@@ -500,67 +673,66 @@ background-size: cover;">
       </div>
 
       <!-- MAIN CONTENT CLOSED -->
-    
+
    </div>
 
    <footer class="ftrbg">
-		<br>
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-				<img src="img/logo-ss.png" style="width:100%;">
-					<ul class="ftco-footer-social list-unstyled">
-						
-						<li><a href="https://www.facebook.com/Steelsoft/" target="_blank"><img src="img/footer/facebook.png" style="width:33px"></a></li>
-						<li><a href="https://www.linkedin.com/company/steelsoft-global/"  target="_blank"><img src="img/footer/linkedin.png" style="width:33px"></a>
-						</li>
-						<li><a href="https://www.instagram.com/steelsoftglobal/"  target="_blank"><img src="img/footer/instagram.png" style="width:33px"></a></li>
-						<li><a href="https://www.youtube.com/channel/UC38wDl4V58KvnOfSQGUnlLw" target="_blank"><img src="img/footer/youtube.png" style="width:33px"></a></li>
-			
-					</ul>
-				</div>
-				<div class="col-md-2">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<h3 class="ftco-heading-2">Links</h3>
-						<ul class="list-unstyled">
-							<li> <a href="index.php">Home</a></li>
-							<li> <a href="about.html">About</a></li>
-							<!-- <li><i class="bi bi-arrow-right-short"></i><a href="benefits.html">Benefits</a></li> -->
-							<li><a href="project.html">Projects</a></li>
-							<li><a href="services.html">Services</a></li>
-							<li><a href="faq.html">FAQ</a></li>
-							<li><a href="career.html">Career</a></li>
-						</ul>
-					</div>
-				</div>
-			
-				<div class="col-md-7">
-					<div class="d-flex flex-wrap justify-content-evenly">
-						<div class="" style="width:310px;">
-							<a href="https://goo.gl/maps/Xgi8TWMR9iCzhYD2A"  target="_blank"> <img style="width:300px; margin: 0px 0px 0px -29px;"src="img/steelsoft map.png" alt="..."/></a>
-						</div>
-					
-						<div class="" style="width:230px;">
-							<h3 class="ftco-heading-2">Location </h3>
-							<div class="block-23 mb-3">
-								<ul>
-									<li> <i class="bi bi-geo-alt-fill"></i> <span class="text"> Brahmavrunda Colony,<br>Flat No-301,Vihaan,Pimple Nilakh,<br>
-											Pune 4110027</span></li>
-									<li><a href="tel:853-019-1192"> <i class="bi bi-telephone-fill"></i><span
-											class="text">+918530191192</span></a></li>
-									<li><a href="mailto:info@steelsoft-global.in?subject=Mail from Our Site"> <i
-											class="bi bi-envelope-open-fill"></i> <span>info@steelsoft-global.in</span></a></li>
+      <div class="footer-row">
+         <div class="footer-column ">
+            <img src="img/logo-ss.png">
+            <ul class="footer-ul">
+               <!-- Logo -->
+               <!-- <img src="img/logo-ss.png" width="200" alt="steel soft"/> -->
 
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+               <!-- <img align="justify-content-left" height="200" width="400" src="img/World Map Steelsoft (1).png"> -->
+               <li><a href="https://www.facebook.com/Steelsoft/" target="_blank"><img src="img/footer/facebook.png"></a>
+               </li>
+               <li><a href="https://www.linkedin.com/company/steelsoft-global/" target="_blank"><img
+                        src="img/footer/linkedin.png"></a></li>
+               <li><a href="https://www.instagram.com/steelsoftglobal/" target="_blank"><img
+                        src="img/footer/instagram.png"></a></li>
+               <li><a href="https://www.youtube.com/channel/UC38wDl4V58KvnOfSQGUnlLw" target="_blank"><img
+                        src="img/footer/youtube.png"></a></li>
 
+            </ul>
+         </div>
+         <div class="footer-column">
+            <h3 class="ftco-heading-2">Links</h3>
+            <ul class="footer-ul-links">
+               <li> <a href="index.php">Home</a></li>
+               <li> <a href="about.html">About</a></li>
+               <!-- <li><i class="bi bi-arrow-right-short"></i><a href="benefits.html">Benefits</a></li> -->
+               <li><a href="project.html">Projects</a></li>
+               <li><a href="services.html">Services</a></li>
+               <li><a href="faq.html">FAQ</a></li>
+               <li><a href="career.html">Career</a></li>
+            </ul>
+         </div>
+
+         <div class="footer-column footer-col-sp">
+            <div class="footer-sp-image">
+               <a href="https://goo.gl/maps/Xgi8TWMR9iCzhYD2A">
+                  <img src="img/steelsoft map.png" alt="..." target="_blank" /></a>
+            </div>
+
+            <div>
+               <h3 class="ftco-heading-2" style="margin-top:5%;">Location </h3>
+               <div class="block-23 mb-3">
+                  <ul>
+                     <li> <i class="bi bi-geo-alt-fill"></i> <span class="text"> Brahmavrunda Colony,<br>Flat
+                           No-301,Vihaan,Pimple Nilakh,<br>
+                           Pune 4110027</span></li>
+                     <li><a href="tel:853-019-1192"> <i class="bi bi-telephone-fill"></i><span
+                              class="text">+918530191192</span></a></li>
+                     <li><a href="mailto:info@steelsoft-global.in?subject=Mail from Our Site"> <i
+                              class="bi bi-envelope-open-fill"></i> <span>info@steelsoft-global.in</span></a></li>
+
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
 
 
 

@@ -38,47 +38,145 @@
       @import url("http://fonts.googleapis.com/earlyaccess/amstelvaralpha.css");
    </style>
 
-   <style type="text/css">
-      .scrollax-performance,
-      .scrollax-performance *,
-      .scrollax-performance *:before,
-      .scrollax-performance *:after {
-         pointer-events: none !important;
-         -webkit-animation-play-state: paused !important;
-         animation-play-state: paused !important;
-      }
+<style type="text/css">
+   /* .scrollax-performance,
+   .scrollax-performance *,
+   .scrollax-performance *:before,
+   .scrollax-performance *:after {
+      pointer-events: none !important;
+      -webkit-animation-play-state: paused !important;
+      animation-play-state: paused !important;
+   } */
 
-      .f-container {
-         display: flex;
-         justify-content: space-evenly;
+   .f-container{
+      display:flex;
+      justify-content:space-evenly;
+   }
+   @media only screen and (max-width:1164px){
+      .list-unstyled li{
+         margin:30px 0;
       }
-
-      .ftco-heading-2 {
-         margin: 0px 0px 0px 0px;
+      .ftco-footer-social li a{
+         width:90px;
       }
+      .container-fluid {
+         padding-left:0p;
+      }
+      
+   }
 
-      @media only screen and (max-width:1164px) {
-         .list-unstyled li {
-            /* margin:30px 0; */
-            margin: 23px -5px 0px 0px;
-            /* padding: 0px 0px 0px 10px; */
+
+   /**
+      
+    * 
+    */
+      .footer-row{
+         display:flex;
+         width:100%;
+         justify-content:space-evenly;
+         flex-wrap: wrap;
+      }
+      .footer-column{
+         display:flex;
+         flex-direction:column;
+      }
+      .footer-ul{
+         display:flex;
+         padding:0;
+         margin:auto;
+         width:265px;
+         flex-wrap:wrap;
+         justify-content:space-evenly;
+         list-style-type:none;
+      }
+      .footer-ul-links{
+         display:flex;
+         padding:0;
+         margin:auto;
+         width:145px;
+         align-items:center;
+         flex-direction:column;
+         list-style-type:none;
+      }
+   
+      .footer-col-sp{
+         flex-direction: row;
+         justify-content: space-between;
+         width: max-content;
+      }
+      
+      .footer-ul-links li{
+         margin:0px auto 0px 10px;
+      }
+      .footer-ul-links li a{
+         width:110px;
+         display:block;
+
+      }
+      .footer-column h3{
+         align-self: center;
+         margin: 10% auto 0px 10px;
+         font-size: 2.5rem;
+      }
+      .footer-ul li{
+         margin:20px;
+      }
+      .footer-column img{
+         width: 255px;
+          height: 100px
+      }
+      .footer-ul li a img{
+         width:45px; height:45px; margin:10px;
+      }
+      .footer-sp-image a{
+         display:block;
+      }
+      .footer-sp-image a img{
+         width: 375px;
+            height: 300px;
+      }
+      @media only screen and (max-width:1090px){
+         .footer-ul-links{
+            flex-direction:row;
+            flex-wrap:wrap;
+            width:100%;
+            width:305px;
+            margin:50px auto;
+            justify-content:space-evenly;
          }
-
-         /* .ftco-footer-social list-unstyled{
-				margin:-10px !important;
-			} */
-         .ftco-footer-social li a {
-            width: 90px;
+         .footer-ul-links li{
+            margin:20px 20px;
          }
-
-         .container-fluid {
-            padding-left: 0px;
-         }
-
       }
+   @media only screen and (max-width:950px){
+      .footer-sp-image a img{
+         width:360px;
+      }
+      .footer-row{
+         align-items:center;
+         flex-direction:column;
+      }
+      .footer-column{
+         width:100%;
+         align-items:center;
+      }
+      .footer-column h3{
+         margin:auto;
+         font-size:2rem;
+      }
+      .footer-column img{
+         width:40vw;
+      }
+      .footer-ul{
+         width:100%;
+      }
+      .footer-col-sp{
+         flex-direction:column;
+      }
+      
+   }
 
-
-      @media only screen and (max-width:800px){
+   @media only screen and (max-width:800px){
          .contact-page-form {
     /* margin-left: 11pc; */
     margin: auto;
@@ -93,8 +191,7 @@
   margin-top: 12px;
 }
    }
-
-   </style>
+</style>
    <script type="text/javascript" charset="UTF-8" src="./common.js.download"></script>
    <script type="text/javascript" charset="UTF-8" src="./controls.js.download"></script>
    <script type="text/javascript" charset="UTF-8" src="./marker.js.download"></script>
@@ -272,69 +369,57 @@
 
    <!-- FOOTER -->
    <footer class="ftrbg">
-      <br>
-      <div class="overlay"></div>
-      <div class="container">
-         <div class="row">
-            <div class="col-md-3">
-               <img src="img/logo-ss.png" style="width:100%;">
-               <ul class="ftco-footer-social list-unstyled">
+		<div class="footer-row">
+			<div class="footer-column ">
+				<img src="img/logo-ss.png" >
+				<ul class="footer-ul">
+					<!-- Logo -->
+					<!-- <img src="img/logo-ss.png" width="200" alt="steel soft"/> -->
+					
+					<!-- <img align="justify-content-left" height="200" width="400" src="img/World Map Steelsoft (1).png"> -->
+					<li><a href="https://www.facebook.com/Steelsoft/" target="_blank"><img src="img/footer/facebook.png" ></a></li>
+					<li><a href="https://www.linkedin.com/company/steelsoft-global/"  target="_blank"><img src="img/footer/linkedin.png" ></a></li>
+					<li><a href="https://www.instagram.com/steelsoftglobal/"  target="_blank"><img src="img/footer/instagram.png" ></a></li>
+					<li><a href="https://www.youtube.com/channel/UC38wDl4V58KvnOfSQGUnlLw" target="_blank"><img src="img/footer/youtube.png" ></a></li>
+		
+				</ul>
+			</div>
+			<div class="footer-column">
+				<h3 class="ftco-heading-2">Links</h3>
+				<ul class="footer-ul-links">
+					<li> <a href="index.php">Home</a></li>
+					<li> <a href="about.html">About</a></li>
+					<!-- <li><i class="bi bi-arrow-right-short"></i><a href="benefits.html">Benefits</a></li> -->
+					<li><a href="project.html">Projects</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="career.html">Career</a></li>
+				</ul>
+			</div>
 
-                  <li><a href="https://www.facebook.com/Steelsoft/" target="_blank"><img src="img/footer/facebook.png"
-                           style="width:33px"></a></li>
-                  <li><a href="https://www.linkedin.com/company/steelsoft-global/" target="_blank"><img
-                           src="img/footer/linkedin.png" style="width:33px"></a>
-                  </li>
-                  <li><a href="https://www.instagram.com/steelsoftglobal/" target="_blank"><img
-                           src="img/footer/instagram.png" style="width:33px"></a></li>
-                  <li><a href="https://www.youtube.com/channel/UC38wDl4V58KvnOfSQGUnlLw" target="_blank"><img
-                           src="img/footer/youtube.png" style="width:33px"></a></li>
+			<div class="footer-column footer-col-sp">
+				<div class="footer-sp-image">
+					<a href="https://goo.gl/maps/Xgi8TWMR9iCzhYD2A"> 
+						<img src="img/steelsoft map.png" alt="..." target="_blank"/></a>
+				</div>
+			
+				<div>
+					<h3 class="ftco-heading-2" style="margin-top:5%;">Location </h3>
+					<div class="block-23 mb-3">
+						<ul>
+							<li> <i class="bi bi-geo-alt-fill"></i> <span class="text"> Brahmavrunda Colony,<br>Flat No-301,Vihaan,Pimple Nilakh,<br>
+									Pune 4110027</span></li>
+							<li><a href="tel:853-019-1192"> <i class="bi bi-telephone-fill"></i><span
+									class="text">+918530191192</span></a></li>
+							<li><a href="mailto:info@steelsoft-global.in?subject=Mail from Our Site"> <i
+									class="bi bi-envelope-open-fill"></i> <span>info@steelsoft-global.in</span></a></li>
 
-               </ul>
-            </div>
-            <div class="col-md-2">
-               <div class="ftco-footer-widget mb-4 ml-md-4">
-                  <h3 class="ftco-heading-2">Links</h3>
-                  <ul class="list-unstyled">
-                     <li> <a href="index.php">Home</a></li>
-                     <li> <a href="about.html">About</a></li>
-                     <!-- <li><i class="bi bi-arrow-right-short"></i><a href="benefits.html">Benefits</a></li> -->
-                     <li><a href="project.html">Projects</a></li>
-                     <li><a href="services.html">Services</a></li>
-                     <li><a href="faq.html">FAQ</a></li>
-                     <li><a href="career.html">Career</a></li>
-                  </ul>
-               </div>
-            </div>
-
-            <div class="col-md-7">
-               <div class="d-flex flex-wrap justify-content-evenly">
-                  <div class="" style="width:310px;">
-                     <a href="https://goo.gl/maps/Xgi8TWMR9iCzhYD2A" target="_blank"> <img
-                           style="width:300px; margin: 0px 0px 0px -29px;" src="img/steelsoft map.png" alt="..." /></a>
-                  </div>
-
-                  <div class="" style="width:230px;">
-                     <h3 class="ftco-heading-2">Location </h3>
-                     <div class="block-23 mb-3">
-                        <ul>
-                           <li> <i class="bi bi-geo-alt-fill"></i> <span class="text"> Brahmavrunda Colony,<br>Flat
-                                 No-301,Vihaan,Pimple Nilakh,<br>
-                                 Pune 4110027</span></li>
-                           <li><a href="tel:853-019-1192"> <i class="bi bi-telephone-fill"></i><span
-                                    class="text">+918530191192</span></a></li>
-                           <li><a href="mailto:info@steelsoft-global.in?subject=Mail from Our Site"> <i
-                                    class="bi bi-envelope-open-fill"></i> <span>info@steelsoft-global.in</span></a></li>
-
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </footer>
-
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 
